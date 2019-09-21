@@ -25,7 +25,7 @@ def Player(x, y):
                                 speed=vector([
                                     settings.PLAYER_SPEED,
                                     settings.PLAYER_SPEED
-                                    ]),
+                                ]),
                                 speed_mlp=vector([0, 0])),
                              PistolGlock(),
                              Collision(),
@@ -40,8 +40,10 @@ def Player(x, y):
                                 point=settings.PLAYER_HANDPOS
                              )],
                 center=vector([x, y]),
-                size=vector([settings.PLAYER_SIZE,
-                             settings.PLAYER_SIZE]),
+                size=vector([
+                    settings.PLAYER_SIZE,
+                    settings.PLAYER_SIZE
+                ]),
                 draw_func=draw_entity,
                 sprite=settings.SPRITE['player']
         )
@@ -66,8 +68,10 @@ def Zombie1(x, y, target):
                              ),
                              Collision()],
                 center=vector([x, y]),
-                size=vector([settings.ZOMBIE1_SIZE,
-                             settings.ZOMBIE1_SIZE]),
+                size=vector([
+                    settings.ZOMBIE1_SIZE,
+                    settings.ZOMBIE1_SIZE
+                ]),
                 draw_func=draw_entity,
                 sprite=settings.SPRITE['zombie1'],
                 score=settings.ZOMBIE1_SCORE
@@ -93,8 +97,10 @@ def Zombie2(x, y, target):
                              ),
                              Collision()],
                 center=vector([x, y]),
-                size=vector([settings.ZOMBIE2_SIZE,
-                             settings.ZOMBIE2_SIZE]),
+                size=vector([
+                    settings.ZOMBIE2_SIZE,
+                    settings.ZOMBIE2_SIZE
+                ]),
                 draw_func=draw_entity,
                 sprite=settings.SPRITE['zombie2'],
                 score=settings.ZOMBIE2_SCORE
@@ -118,8 +124,10 @@ def Zombie3(x, y, target):
                              ),
                              Collision()],
                 center=vector([x, y]),
-                size=vector([settings.ZOMBIE2_SIZE,
-                             settings.ZOMBIE2_SIZE]),
+                size=vector([
+                    settings.ZOMBIE2_SIZE,
+                    settings.ZOMBIE2_SIZE
+                ]),
                 draw_func=draw_entity,
                 sprite=settings.SPRITE['zombie3'],
                 score=settings.ZOMBIE2_SCORE
@@ -145,8 +153,10 @@ def Demon(x, y, target):
                              Collision(),
                              Glow(sprite=settings.SPRITE['glowcircle'])],
                 center=vector([x, y]),
-                size=vector([settings.DEMON_SIZE,
-                             settings.DEMON_SIZE]),
+                size=vector([
+                    settings.DEMON_SIZE,
+                    settings.DEMON_SIZE
+                ]),
                 draw_func=draw_entity,
                 sprite=settings.SPRITE['demon'],
                 score=settings.DEMON_SCORE)
